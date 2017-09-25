@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VehicleLocationTracker</string>
+    <string-array name="array_vehicletype">
+        <item>Select Vehicle Type</item>
+        <item>Police</item>
+        <item>Ambulance</item>
+        <item>FireEngine</item>
+    </string-array>
+
+    <string name="title_activity_first_fullscreen">FirstFullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

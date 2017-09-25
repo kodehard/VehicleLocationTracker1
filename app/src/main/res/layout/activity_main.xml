@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.audlink.vehiclelocationtracker.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lay_trick_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:text="From Place"
+            android:layout_margin="2dp" />
+        <AutoCompleteTextView
+            android:id="@+id/from_place"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </AutoCompleteTextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:text="To Place"
+            android:layout_margin="2dp" />
+        <AutoCompleteTextView
+            android:id="@+id/to_place"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </AutoCompleteTextView>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/saveTrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Trip"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_stoptrick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+        <Button
+            android:id="@+id/stopTrick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Tracking"/>
+    </LinearLayout>
+</LinearLayout>
